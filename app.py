@@ -939,8 +939,7 @@ with gr.Blocks(title="🌟 天空蓝智能应用平台", css=custom_css) as demo
                                 minimum=0,
                                 maximum=500,
                                 value=0,
-                                step=10,
-                                info="0表示无限制"
+                                step=10
                             )
                     
                     text_process_btn = gr.Button("🔄 处理文本", variant="primary")
@@ -974,8 +973,7 @@ with gr.Blocks(title="🌟 天空蓝智能应用平台", css=custom_css) as demo
                 with gr.Column():
                     image_input = gr.Image(
                         label="🖼️ 上传图像",
-                        type="pil",
-                        info="支持JPG、PNG等常见格式"
+                        type="pil"
                     )
                     
                     with gr.Row():
@@ -1171,8 +1169,7 @@ with gr.Blocks(title="🌟 天空蓝智能应用平台", css=custom_css) as demo
                                 minimum=1,
                                 maximum=5,
                                 value=5,
-                                step=1,
-                                info="1=非常不满意，5=非常满意"
+                                step=1
                             )
                             
                             feedback_category = gr.Dropdown(
